@@ -4,8 +4,8 @@
   "description": "ProfitIQ — India's intelligent profitability audit platform for dealer networks and distribution businesses",
   "private": true,
   "scripts": {
-    "dev": "npx serve .",
-    "start": "npx serve .",
+    "dev": "npx serve public",
+    "start": "npx serve public",
     "build": "echo 'Static assets ready for deployment'"
   },
   "keywords": [

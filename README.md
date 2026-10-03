@@ -56,7 +56,7 @@ npm start
 ```
 or
 ```bash
-npx serve .
+npx serve public
 ```
 
 Then open [http://localhost:3000](http://localhost:3000) in your browser.
@@ -66,14 +66,15 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser.
 ## 📁 Project Structure
 
 ```
-├── 404.html         # Custom branded 404 error page (auto-routed by Vercel)
-├── favicon.svg      # SVG brand favicon (IQ logo)
-├── index.html       # Landing page with SEO & Open Graph meta tags
+├── public/          # Static site root (Vercel output directory)
+│   ├── 404.html     # Custom branded 404 error page (auto-routed by Vercel)
+│   ├── favicon.svg  # SVG brand favicon (IQ logo)
+│   ├── index.html   # Landing page with SEO & Open Graph meta tags
+│   ├── robots.txt   # Search engine crawler instructions
+│   ├── script.js    # Interactive scripts (ROI calculator, AI recon simulator, demo form)
+│   ├── sitemap.xml  # XML sitemap for Google & Bing indexing
+│   └── styles.css   # Complete design system & responsive styling
 ├── package.json     # Project metadata and local dev scripts
-├── robots.txt       # Search engine crawler instructions
-├── script.js        # Interactive scripts (ROI calculator, AI recon simulator, demo form)
-├── sitemap.xml      # XML sitemap for Google & Bing indexing
-├── styles.css       # Complete design system & responsive styling
 ├── vercel.json      # Vercel deployment configuration (security headers & caching)
 └── .gitignore       # Git ignore rules for node, system & vercel files
 ```
