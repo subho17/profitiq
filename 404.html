@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Page Not Found · ProfitIQ</title>
+<meta name="description" content="The page you are looking for does not exist or has been moved.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .error-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--cream);
+    color: var(--ink);
+    position: relative;
+    overflow: hidden;
+  }
+  .error-nav {
+    padding: 24px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cream-deep);
+    background: rgba(250, 248, 245, 0.85);
+    backdrop-filter: blur(12px);
+  }
+  .error-hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 24px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .error-card {
+    max-width: 640px;
+    background: #FFFFFF;
+    border: 1.5px solid var(--cream-deep);
+    border-radius: 20px;
+    padding: 56px 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+    animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .error-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(232, 51, 74, 0.08);
+    border: 1px solid rgba(232, 51, 74, 0.2);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 24px;
+  }
+  .error-code {
+    font-family: var(--fd);
+    font-size: clamp(64px, 12vw, 108px);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .error-code em {
+    font-style: normal;
+    color: var(--green);
+  }
+  .error-title {
+    font-family: var(--fd);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+    color: var(--ink);
+  }
+  .error-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ink-muted);
+    margin-bottom: 32px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .error-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .error-footer {
+    padding: 24px 48px;
+    border-top: 1px solid var(--cream-deep);
+    font-size: 13px;
+    color: var(--ink-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  @media (max-width: 640px) {
+    .error-nav, .error-footer { padding: 18px 24px; }
+    .error-card { padding: 40px 24px; }
+  }
+</style>
+</head>
+<body class="error-page">
+
+  <header class="error-nav">
+    <a href="/" class="nl">
+      <div class="lm">IQ</div>
+      <span class="lw">Profit<em>IQ</em></span>
+    </a>
+    <a href="tel:+919417000318" class="btn bo" style="font-size:13px;padding:8px 16px">Call us</a>
+  </header>
+
+  <main class="error-hero">
+    <div class="error-card">
+      <div class="error-tag">
+        <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--red)"></span>
+        Variance Flagged · 404
+      </div>
+      <div class="error-code">4<em>0</em>4</div>
+      <h1 class="error-title">This page leaked out of our records.</h1>
+      <p class="error-desc">The URL you're trying to reach couldn't be reconciled. It might have been moved, renamed, or never existed.</p>
+      <div class="error-actions">
+        <a href="/" class="btn bg" style="font-size:14px;padding:12px 24px">← Return to Homepage</a>
+        <a href="mailto:hi@profitiq.in" class="btn bi" style="font-size:14px;padding:12px 24px">Contact Support</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="error-footer">
+    <span>© 2026 ProfitIQ · profitiq.in</span>
+    <a href="/" style="color:var(--green);text-decoration:none;font-weight:600">Back to ProfitIQ →</a>
+  </footer>
+
+</body>
+</html>

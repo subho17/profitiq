@@ -1,0 +1,19 @@
+{
+  "name": "profitiq-site",
+  "version": "1.0.0",
+  "description": "ProfitIQ — India's intelligent profitability audit platform for dealer networks and distribution businesses",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "build": "echo 'Static assets ready for deployment'"
+  },
+  "keywords": [
+    "profitiq",
+    "dealership-audit",
+    "profitability",
+    "margin-protection"
+  ],
+  "author": "TG Consulting",
+  "license": "UNLICENSED"
+}
